@@ -57,15 +57,7 @@ class TemplateWrapper extends Component {
     const { location, children, site } = this.props;
 
     return (
-      <div>
-        <Helmet
-          title={`${site.siteMetadata.title} — ${site.siteMetadata.name}`}
-        />
-        <Header
-          name={site.siteMetadata.name}
-          title={site.siteMetadata.title}
-          date={site.siteMetadata.date}
-        />
+      <div>        
         <Swipeable
           onSwipedLeft={this.swipeLeft}
           onSwipedRight={this.swipeRight}
